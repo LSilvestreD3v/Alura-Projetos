@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="Crypto">
+    <div class="container">
+        <h1>Texto para Cryptografrar</h1>
+        <label for="inputText">Insira o Texto:</label>
+        <textarea id="inputText" placeholder="Insira seu texto"></textarea>
+
+        <label for="shiftAmount">Quantia de Deslocamento:</label>
+        <input type="number" id="shiftAmount" placeholder="Insira quantia">
+
+        <button onclick="encodeText()">Cryptografar</button>
+        <button onclick="decodeText()">Descryptografar</button>
+
+        <label for="outputText">Texto Cryptografado:</label>
+        <textarea id="outputText" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
