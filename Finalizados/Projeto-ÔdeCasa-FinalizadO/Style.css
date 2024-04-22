@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #cfcfcf;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: background-color 0.3s ease;
+}
+
+header.sticky {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 750;
+    font-size: 2.2em;
+    text-decoration: none;
+     text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(235, 182, 222);
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(202, 62, 160);
+}
+
+header.sticky nav ul li a {
+    color: #111;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('Imagens/banner3.jpg') center/cover;
+    color: #fff;
+    text-align: center;
+}
+.content h2{
+    text-shadow: 2px 2px black;
+    font-size: 70px;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(202, 62, 160);
+    
+}
+.content p{
+    font-size: 20px;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(202, 62, 160);
+}
+.banner .content {
+    max-width: 900px;
+}
+
+.btn {
+    font-size: 1.3em;
+    color: #fff;
+    background: #ff0157;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    letter-spacing: 5px;
+}
+
+.section {
+    padding: 100px;
+}
+
+.Sobre {
+    background-color: #a58b44;
+    display: flex;
+    flex-direction: column; /* Empilhar os itens verticalmente */
+    align-items: center; /* Centralizar os itens horizontalmente */
+}
+
+.TituloTexto {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.TituloTexto h2 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #111;
+}
+
+.TituloTexto span {
+    color: #ff0157;
+    font-weight: 700;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Largura máxima para a apresentação */
+}
+
+#amostra {
+    flex: 0 0 auto; /* Tamanho automático baseado no conteúdo */
+    margin-right: 20px; /* Espaçamento à direita */
+}
+
+.apresentacao img {
+    width: 100%; /* Ajustar a largura da imagem */
+    max-width: 450px; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+    border: 5px solid #ff0157; /* Borda destacada */
+    border-radius: 8px;
+}
+
+.texto {
+    flex: 1; /* Crescer para ocupar o espaço restante */
+}
+
+.apresentacao h2 {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(238, 171, 221);
+}
+/* fim apresentaçao */
+
+/* menu */
+.Menu{
+    display: flexbox;
+    margin: 25px;
+    padding: 20px;
+}
+.TituloTexto{
+    justify-content: center;
+}
+.Menu .meio{
+    font-size: 30px;
+}
+.Menu p{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(238, 171, 221);
+}
+.content_pratos{
+    display: flexbox;
+}
+/* Cotent_Pratos */
+
+.prato_1{
+    display: flex;
+    background-color: #a58b44;
+}
+.prato1{
+
+}
+.texto_prato1 h2{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(238, 171, 221);
+}
+.texto_prato1 h3{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(238, 171, 221);
+}
+/* Pratos */
+
+.prato_2{
+    display: flex;
+    background-color: #a58b44;
+}
+.prato2{
+
+}
+.texto_prato2 h2{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(141, 36, 97), 0 0 0.2em rgb(85, 29, 66);
+    color: rgb(238, 171, 221);
+}
+.texto_prato2 h3{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(238, 171, 221);
+}
+/* Pratos */
+
+.prato_3{
+    display: flex;
+    background-color: #a58b44;
+}
+.prato3{
+
+}
+.texto_prato3 h2{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(141, 36, 97), 0 0 0.2em rgb(85, 29, 66);
+    color: rgb(238, 171, 221);
+}
+.texto_prato3 h3{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(238, 171, 221);
+}
+
+/* Pratos */
+
+.prato_4{
+    display: flex;
+    background-color: #a58b44;
+}
+.prato4{
+
+}
+.texto_prato4 h2{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(141, 36, 97), 0 0 0.2em rgb(85, 29, 66);
+    color: rgb(238, 171, 221);
+}
+.texto_prato4 h3{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(238, 171, 221);
+}
+
+/* Pratos */
+
+.prato_5{
+    display: flex;
+    background-color: #a58b44;
+}
+.prato5{
+
+}
+.texto_prato5 h2{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(141, 36, 97), 0 0 0.2em rgb(85, 29, 66);
+    color: rgb(238, 171, 221);
+}
+.texto_prato5 h3{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.9;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(141, 36, 97),
+    0 0 0.2em rgb(85, 29, 66);
+  color: rgb(238, 171, 221);
+}
+
+/* Fim-Pratos */
+
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.menu .content .box {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.menu .content .box:hover {
+    transform: translateY(-10px);
+}
+
+.menu .content .box .imgBx {
+    height: 300px;
+}
+
+.menu .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .titulo .btn {
+    margin-top: 30px;
+}
+
+/* Estilos para o Carrossel */
+.carousel {
+    background-color: #a58b44;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Suporte para touch em dispositivos iOS */
+    margin-top: 50px;
+}
+
+.slide {
+    min-width: 20%;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(41, 40, 40, 0.1);
+    border: 5px solid #ff0157; /* Borda destacada */
+    border-radius: 8px;
+}
+
+.slide img {
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.slide h3, .slide p {
+    text-align: center;
+    color: #111;
+}
+
+.titulo_veja{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Estilos para o Formulário de Contato */
+.Contato {
+    text-align: center;
+}
+
+.formulario {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border: 5px solid #ff0157; /* Borda destacada */
+    border-radius: 8px;
+}
+
+.formulario button {
+    background-color: #ff0157;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

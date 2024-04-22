@@ -1,0 +1,180 @@
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.menu .content .box {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.menu .content .box:hover {
+    transform: translateY(-10px);
+}
+
+.menu .content .box .imgBx {
+    height: 300px;
+}
+
+.menu .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .titulo .btn {
+    margin-top: 30px;
+}
+.content_pratos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: nowrap;
+}
+
+.prato_1,
+.prato_2,
+.prato_3,
+.prato_4,
+.prato_5 {
+    width: calc(10% - 10px); /* Largura dos pratos (20% do contêiner com espaçamento) */
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.prato_1:hover .texto,
+.prato_2:hover .texto,
+.prato_3:hover .texto,
+.prato_4:hover .texto,
+.prato_5:hover .texto {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.prato1 img,
+.prato2 img,
+.prato3 img,
+.prato4 img,
+.prato5 img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.prato_1:hover img,
+.prato_2:hover img,
+.prato_3:hover img,
+.prato_4:hover img,
+.prato_5:hover img {
+    transform: scale(1.1);
+}
+
+.texto {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Inicialmente fora da visualização */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro para texto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.texto h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos específicos para cada prato */
+.prato1 .texto,
+.prato2 .texto,
+.prato3 .texto,
+.prato4 .texto,
+.prato5 .texto {
+    transform: translateX(100%); /* Inicialmente fora da visualização */
+}
+
+/* Estilização dos pratos específicos */
+.prato1 .texto { background-color: rgba(255, 1, 87, 0.8); }
+.prato2 .texto { background-color: rgba(255, 136, 0, 0.8); }
+.prato3 .texto { background-color: rgba(255, 206, 0, 0.8); }
+.prato4 .texto { background-color: rgba(0, 230, 118, 0.8); }
+.prato5 .texto { background-color: rgba(0, 191, 255, 0.8); }
+
+/* Estilos para o Carrossel */
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Suporte para touch em dispositivos iOS */
+    margin-top: 50px;
+}
+
+.slide {
+    min-width: 20%;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(41, 40, 40, 0.1);
+}
+
+.slide img {
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.slide h3, .slide p {
+    text-align: center;
+    color: #111;
+}
+
+
+/* Estilos para o Formulário de Contato */
+.Contato {
+    text-align: center;
+}
+
+.formulario {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.formulario button {
+    background-color: #ff0157;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
